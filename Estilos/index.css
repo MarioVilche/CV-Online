@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+  --transicion: color 0.2s, background-color 0.3s ease;
+  --nivelHtml: 0;
+  --nivelCss: 0;
+  --nivelJs: 0;
+  --colorFondoOscuro: rgb(61, 61, 61);
+  --colorFondoClaro: rgb(218, 218, 218);
+  --colorHtml: rgb(216, 68, 14);
+  --colorCss: rgb(48, 48, 233);
+  --colorJavascript: rgb(197, 197, 27);
+}
+
+body {
+  width: 99%;
+  font-family: "Roboto", sans-serif;
+  color: rgb(63, 63, 63);
+  text-align: center;
+  background-color: white;
+}
+
+body li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body ul {
+  padding: 0;
+  margin: 0;
+}
+
+body ol {
+  padding: 0;
+  margin: 0;
+}
+
+body i {
+  align-self: center;
+  margin: 0 10px 0 0;
+}
+
+#inicio button {
+  font-size: medium;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center;
+}
+
+#oscuro {
+  color: white;
+  background-color: rgb(93, 122, 214);
+  box-shadow: 0 0 15px rgba(93, 121, 214, 0.7);
+  position: absolute;
+  top: 23px;
+  right: 5%;
+  padding: 5px;
+  border-radius: 10px;
+  transition: var(--transicion);
+  cursor: pointer;
+}
+
+#claro {
+  color: white;
+  background-color: rgb(93, 122, 214);
+  box-shadow: 0 0 15px rgba(93, 121, 214, 0.7);
+  position: absolute;
+  top: 23px;
+  right: 5%;
+  padding: 5px;
+  border-radius: 10px;
+  transition: var(--transicion);
+  cursor: pointer;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0);
+  width: 95%;
+  height: 520px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(136, 136, 136, 0.9);
+  display: inline-block;
+  transition: var(--transicion);
+}
+
+.cabecera {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgb(255, 255, 255)
+    ),
+    url("/img/FondoSecciones.jpg");
+  width: 100%;
+  height: 470px;
+  border-radius: 20px 20px 0 0;
+  background-size: cover;
+  transition: var(--transicion);
+}
+
+.cabeceraOscuro {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgb(0, 0, 0)),
+    url("/img/FondoSecciones.jpg");
+  width: 100%;
+  height: 450px;
+  border-radius: 20px 20px 0 0;
+  background-size: cover;
+  transition: var(--transicion);
+}
+
+#fotoPerfil {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#fotoPerfil img {
+  width: 200px;
+  border-radius: 100%;
+  box-shadow: 0px 9px 35px rgba(0, 0, 0, 0.5);
+}
+
+.indice {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+#indice1 {
+  width: 60%;
+}
+
+#indice2 {
+  width: 40%;
+}
+
+@media (max-width: 610px) {
+  header {
+    height: 600px;
+  }
+  .indice {
+    display: block;
+  }
+  #indice1 {
+    width: 100%;
+  }
+  #indice2 {
+    width: 100%;
+  }
+}
+
+.indice ul {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+
+a {
+  color: lightslategray;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.719);
+  text-decoration: none;
+}
+
+.boton {
+  margin-top: 50px;
+}
+
+.boton :hover {
+  transition: all 0.2s ease;
+  color: white;
+  background-color: rgb(93, 122, 214);
+  box-shadow: 0 0 15px rgba(93, 121, 214, 0.7);
+}
+
+.indice li {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  display: inline-block;
+  text-align: center;
+  width: 95%;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(136, 136, 136, 0.9);
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgb(255, 255, 255)
+    ),
+    url("/img/FondoSecciones.jpg");
+  background-size: cover;
+  transition: var(--transicion);
+}
+
+.sectionOscuro {
+  display: inline-block;
+  text-align: center;
+  width: 95%;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(136, 136, 136, 0.9);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgb(0, 0, 0)),
+    url("/img/FondoSecciones.jpg");
+  background-size: cover;
+  transition: var(--transicion);
+}
+
+.irAInicio {
+  transition: all 0.5s ease;
+  color: white;
+  background-color: rgb(93, 122, 214);
+  box-shadow: 0 0 15px rgba(93, 121, 214, 0.7);
+  position: fixed;
+  right: 15px;
+  bottom: -75px;
+}
+
+.boton i {
+  margin: 10px;
+}
+
+.circulo{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.circulos {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font: bold 15px Roboto;
+}
+
+.circulo2 {
+  margin: 0;
+  padding: 0;
+  fill: none;
+  stroke-width: 14px;
+  stroke: var(--colorFondoClaro);
+  transform-origin: 50%;
+  transform: rotate(-180deg);
+}
+
+.circulo #html,
+#css,
+#javascript {
+  margin: 0;
+  padding: 0;
+  fill: none;
+  stroke-width: 14px;
+  transform-origin: 50%;
+  transform: rotate(-180deg);
+}
+
+#html {
+  stroke: var(--colorHtml);
+  stroke-dasharray: 0 100;
+}
+
+@keyframes rellenarHtml {
+  to {
+    stroke-dasharray: var(--nivelHtml) 100;
+  }
+}
+
+.porcentaje {
+  position: relative;
+}
+
+.porcentaje #porcentajeHtml {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: bold 20px/1em Roboto;
+  color: var(--colorHtml);
+}
+
+#css {
+  stroke: var(--colorCss);
+  stroke-dasharray: 0 100;
+}
+
+@keyframes rellenarCss {
+  to {
+    stroke-dasharray: var(--nivelCss) 100;
+  }
+}
+
+.porcentaje #porcentajeCss {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: bold 20px/1em Roboto;
+  color: var(--colorCss);
+}
+
+#javascript {
+  stroke: var(--colorJavascript);
+  stroke-dasharray: 0 100;
+}
+
+@keyframes rellenarJs {
+  to {
+    stroke-dasharray: var(--nivelJs) 100;
+  }
+}
+
+.porcentaje #porcentajeJs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: bold 20px/1em Roboto;
+  color: var(--colorJavascript);
+}
+
+@media (min-width: 610px) {
+  .circulos {
+    gap: 30px;
+    font: bold 15px Roboto;
+  }
+}
+
+@media (max-width: 610px) {
+  .circulo{
+    height: 80px;
+  }
+
+  circle{
+    margin: 0;
+    padding: 0;
+    r: 36px;
+  }
+
+  .circulo2 {
+    stroke-width: 8px;
+  }
+
+  .circulo #html,
+  #css,
+  #javascript {
+    stroke-width: 8px;
+  }
+
+  .porcentaje #porcentajeHtml{
+    font: bold 15px Roboto;
+  }
+
+  .porcentaje #porcentajeCss {
+    font: bold 15px Roboto;
+  }
+
+  .porcentaje #porcentajeJs {
+    font: bold 15px Roboto;
+  }
+}

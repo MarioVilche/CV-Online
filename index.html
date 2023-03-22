@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/index.css">
+    <script src="https://kit.fontawesome.com/bced5112ee.js" crossorigin="anonymous"></script>
+    <title>Curriculum</title>
+</head>
+
+<body>
+    <!--Cabecera-->
+    <header>
+        <div class="cabecera">
+
+            <div id="inicio">
+                <button id="oscuro" onclick="modoscuro()">☽ Modo oscuro</button>
+            </div>
+
+            <div id="fotoPerfil">
+                <img id="foto">
+                <h2 id="Nombre"></h2>
+                <div class="iconos">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <p><b id="trabajo"></b></p>
+                </div>
+                <div class="iconos">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p id="localidad"></p>
+                </div>
+            </div>
+            <div class="indice">
+                <div id="indice1">
+                    <ul>
+                        <li class="boton" title="Estudios"><a class="botones" id="botonEstudios" href="#estudios"><i
+                                    class="fa-solid fa-graduation-cap"></i></a></li>
+                        <li class="boton" title="Experiencia"><a class="botones" id="botonExperiencia"
+                                href="#experiencia"><i class="fa-solid fa-building"></i></a></li>
+                        <li class="boton" title="Habilidades"><a class="botones" id="botonHabilidades"
+                                href="#habilidades"><i class="fa-sharp fa-solid fa-chart-simple"></i></a></li>
+                    </ul>
+                </div>
+                <div id="indice2">
+                    <ul>
+                        <li class="boton" title="Otros datos"><a class="botones" id="botonOtros" href="#otros"><i
+                                    class="fa-solid fa-table"></i></a></li>
+                        <li class="boton" title="Contacto"><a class="botones" id="botonContacto" href="#contacto"><i
+                                    class="fa-solid fa-address-card"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!--Estudios-->
+
+    <section id="estudios" class="section">
+        <div>
+
+            <div class="iconos">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h2>Estudios</h2>
+            </div>
+
+            <ul>
+                <li>Primaria completa</li>
+                <li>Sucundaria completa</li>
+            </ul>
+        </div>
+    </section>
+
+    </div>
+
+    <!--Experiencia-->
+
+    <section id="experiencia" class="section">
+        <div>
+
+            <div class="iconos">
+                <i class="fa-solid fa-building"></i>
+                <h2>Experiencia</h2>
+            </div>
+
+            <ol>
+                <li id="exp1"><b>Durlero:</b> desde el 12/11/2021 hasta el 06/04/2022 en MUNDO PLACAS.<br><b>Tareas:</b>
+                    Colocamient de placas de durloc, Enmasillamiento, colocacion de cielos razos de pbc, colocacon de
+                    aislamiento termico y sonoro.</li>
+                <br>
+                <li id="exp2"><b>Parquista:</b> desde el 03/10/2014 hasta el 10/12/2014 en THE CLEAN
+                    GARDEN.<br><b>Tareas:</b> Limpieza y mantenimiento de espacios verdes, colocacion de cesped
+                    artificial.</li>
+                <br>
+                <li id="exp3"><b>Ayudante de albañil</b> en relacion de dependencia.<br><b>Tareas:</b> Elaboracion de
+                    mezclas para la construccion, Limpieza y mantenimiento de herramientas.</li>
+            </ol>
+
+        </div>
+    </section>
+
+    <!--Habilidades-->
+
+    <section id="habilidades" class="section">
+
+        <div class="iconos">
+            <i class="fa-sharp fa-solid fa-chart-simple"></i>
+            <h2>Habilidades</h2>
+        </div>
+        <br>
+
+        <div class="circulos">
+
+            <div>
+                <p>HTML</p>
+                <div class="porcentaje">
+                    <svg class="circulo">
+                        <circle class="circulo2" r="68" cx="50%" cy="50%" />
+                        <circle class="circulo1" id="html" r="68" cx="50%" cy="50%" pathlength="100" />
+                    </svg>
+                    <span id="porcentajeHtml">75%</span>
+                </div>
+            </div>
+
+            <div>
+                <p>CSS</p>
+                <div class="porcentaje">
+                    <svg class="circulo">
+                        <circle class="circulo2" r="68" cx="50%" cy="50%" />
+                        <circle class="circulo1" id="css" r="68" cx="50%" cy="50%" pathlength="100" />
+                    </svg>
+                    <span id="porcentajeCss">60%</span>
+                </div>
+            </div>
+
+            <div>
+                <p>JAVASCRIPT</p>
+                <div class="porcentaje">
+                    <svg class="circulo">
+                        <circle class="circulo2" r="68" cx="50%" cy="50%" />
+                        <circle class="circulo1" id="javascript" r="68" cx="50%" cy="50%" pathlength="100" />
+                    </svg>
+                    <span id="porcentajeJs">40%</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Otros datos-->
+
+    <section id="otros" class="section">
+        <div>
+
+            <div class="iconos">
+                <i class="fa-solid fa-table"></i>
+                <h2>Otros datos de interes</h2>
+            </div>
+
+            <ul>
+                <li><b>Fecha de nacimiento</b></li>
+                <li id="nacimiento"></li>
+                <br>
+                <li><b>Disponibilidad de incorporacion</b></li>
+                <li>Full time</li>
+                <br>
+                <li><b>Veiculo propio</b></li>
+                <li id="veiculo">No</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!--Contacto-->
+
+    <section id="contacto" class="section">
+        <div>
+
+            <div class="iconos">
+                <i class="fa-solid fa-address-card"></i>
+                <h2>Contacto</h2>
+            </div>
+
+            <dl>
+                <li><b>Teléfono</b></li>
+                <li id="numero"></li>
+                <br>
+                <li><b>Correo electrónico</b></li>
+                <li id="email"></li>
+            </dl>
+
+        </div>
+    </section>
+
+    <div class="boton" id="VolverAInicio">
+        <a href="#inicio" class="irAInicio"><i class="fa-solid fa-up-long"></i></a>
+    </div>
+
+    <footer>
+
+        <div class="iconos">
+            <i class="fa-solid fa-copyright"></i>
+            <p><b>Creado por:</b> Mario Vilche.</p>
+        </div>
+
+    </footer>
+
+    <script src="Scripts/index.js"></script>
+</body>
+
+</html>
